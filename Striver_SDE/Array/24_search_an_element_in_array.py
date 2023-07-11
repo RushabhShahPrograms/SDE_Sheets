@@ -14,3 +14,13 @@ Output: 5
 Explanation: The answer is 5 because 10 is present at 5th index.
 '''
 
+n = 6
+arr = [6,7,9,5,3,10]
+k = 10
+ans = -1
+for i in range(n):
+    if(arr[i] == k):
+        ans = i
+        break
+
+print("The element is present in",ans,"index")
