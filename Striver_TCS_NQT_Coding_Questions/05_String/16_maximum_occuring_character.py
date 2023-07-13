@@ -34,6 +34,6 @@ def maxOccuringChar(str):
     return ans
 
 #Driver Code
-str = "00gle"
+str = "apple"
 str = ''.join(sorted(str))
 print("Maximum Occuring Character is",maxOccuringChar(str))
