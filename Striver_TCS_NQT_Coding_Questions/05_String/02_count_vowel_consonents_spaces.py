@@ -18,3 +18,20 @@ Vowels: 8
 Consonants: 15
 White spaces: 4
 '''
+def solve(str):
+    vowels = consonants = whitespaces = 0
+    str = str.lower()
+    for i in range(len(str)):
+        if str[i] == 'a' or str[i] == 'e' or str[i] == 'i' or str[i] == 'o' or str[i] == 'u':
+            vowels += 1
+        elif str[i] >= 'a' and str[i] <= 'z':
+            consonants += 1
+        elif str[i] == ' ':
+            whitespaces += 1
+
+    print("Vowels:", vowels)
+    print("Consonants:", consonants)
+    print("White Spaces:", whitespaces)
+
+str = input("Enter the sentence: ")
+solve(str)
